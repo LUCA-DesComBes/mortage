@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="form">
+        <form action="" id="form">
+          <header>
+          <h2>Mortgage Calculator</h2>
+          <button type="reset" class="reset">Clear All</button>
+          </header> 
+          <main>
+          <label for="montage-amount">
+            Mortgage Amount
+            <div> 
+              £
+              <input type="number" id="montage-amount" name="montage-amount">
+            </div>
+          </label>
+          <label for="montage-term">
+            Mortgage Term
+            <div>
+              <input type="number" id="montage-term" name="montage-term">
+              years
+            </div>
+          </label>
+          <label for="interset-rate">
+            Interest Rate
+            <div>
+              <input type="number" id="interset-rate" name="interset-rate">
+              %
+            </div>
+          </label>
+          <label for="repayment">
+            Mortgage Type
+            <div>
+
+            </div>
+            <div class="radio">
+              <input type="radio" name="repayment" id="repayment">
+              Repayment
+            </div>
+            <div class="radio">
+              <input type="radio" name="repayments" id="repayment">
+              Interest Only
+            </div>
+          </label>
+        </main>
+          <button type="submit">
+            <img src="./public/ph_calculator-fill.svg" alt="">
+            Calculate Repayments
+          </button>
+        </form>
+      </div>
+      <div class="checkup">
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

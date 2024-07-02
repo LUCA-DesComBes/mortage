@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="circle" class="circle"></div>
+    </main>
+    <style>
+        html,
+body {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	border: 2px solid black;
+	border-radius: 9999px;
+	background-color: orangered;
+}
+    </style>
+</body> 
+    <script defer>
+        let counter = 0;
+        const circle = document.getElementById("circle"); 
+        let positionY = 0;
+        let positionX = 0
+window.addEventListener("keydown", (e)=>{
+    const keydown = e.key;
+    // console.log(e.key)
+    if(keydown === "z" || keydown === "ArrowUp"){
+        positionY = positionY - 10;
+    } else if (keydown === "s" || keydown === "ArrowDown"){
+        positionY = positionY + 10;
+    } else if (keydown === "q" || keydown === "ArrowLeft"){
+        positionX = positionX - 10;
+    }
+    else if (keydown === "d" || keydown === "ArrowRight"){
+        positionX = positionX + 10;
+    }
+    circle.style.top = `${positionY}px`
+    circle.style.left = `${positionX}px`
+})
+    </script>
+</html>

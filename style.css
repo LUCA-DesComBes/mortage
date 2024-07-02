@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    background-color: #E4F4FD;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    color: black;
+    font-size: larger;
+    z-index: 1;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    padding: 32px 24px;
+    color: black;
+}
+
+.reset {
+    background-color: white;
+    text-decoration: underline;
+    border: none;
+    color: #4E6E7E;
+    margin-bottom: 24px;
+}
+
+main {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 24px 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px 0px;
+}
+
+input[type="number"] {
+    display: grid;
+    width: 327px;
+    height: 48px;
+    border: 1px solid #6B94A8;
+    border-radius: 4px;
+}
+
+.checkup {
+    background-color: #133041;
+    padding: 32px 24px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #6B94A8;
+    gap: 16px;
+}
+
+input[type="radio"] {
+    height: 24px;
+    width: 24px;
+}
+
+button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 12px;
+    color: #133041;
+    background-color: rgb(216, 219, 47);
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(216, 219, 47, 0.5);
+    transition: 550ms ease-in-out;
+}
